@@ -1,7 +1,7 @@
-```markdown
-# 💱 Conversor de Monedas - Java Console App
+# 💱 Conversor de Monedas – Aplicación de Consola en Java
 
-Una aplicación de consola en Java que permite convertir entre distintas monedas usando la API de ExchangeRate-API. Guarda un historial de conversiones con marcas de tiempo y utiliza estructuras modernas como `record`, `HttpClient` y librerías externas como `dotenv-java` y `Gson`.
+Una aplicación de consola escrita en Java que permite convertir entre distintas monedas utilizando la API pública de ExchangeRate-API.  
+Registra un historial de conversiones con marcas de tiempo y emplea características modernas del lenguaje como `record`, `HttpClient` y librerías externas como `dotenv-java` y `Gson`.
 
 ---
 
@@ -11,23 +11,23 @@ Una aplicación de consola en Java que permite convertir entre distintas monedas
 - Registro de historial con fecha y hora 🕓
 - Uso de API pública (ExchangeRate-API)
 - Carga de variables de entorno desde `.env`
-- Uso de clases `record` y `HttpClient`
-- Formato limpio y modular de código Java ☕
+- Uso de `record` (Java 16+) y `HttpClient` (Java 11+)
+- Código modular, limpio y fácil de mantener ☕
 
 ---
 
 ## 📦 Librerías utilizadas
 
-| Librería           | Versión   | Descripción                                 |
-|--------------------|-----------|---------------------------------------------|
-| `dotenv-java`      | 2.2.4     | Para cargar variables de entorno desde `.env` |
-| `gson`             | 2.13.1    | Para parsear y mapear respuestas JSON        |
+| Librería       | Versión | Descripción                                          |
+|----------------|---------|------------------------------------------------------|
+| `dotenv-java`  | 2.2.4   | Carga variables de entorno desde el archivo `.env`   |
+| `gson`         | 2.13.1  | Parseo y mapeo de datos JSON                         |
 
 ---
 
 ## 📁 Estructura del proyecto
 
-```
+```bash
 challengeConversorDeMonedas-main/
 ├── src/
 │   ├── models/               # Clases record para modelar datos
@@ -37,19 +37,14 @@ challengeConversorDeMonedas-main/
 ├── .env                      # Clave API
 ├── README.md                 # Documentación del proyecto
 └── libs/                     # Librerías externas (Gson y dotenv)
+
 ```
-
 ---
-
 ## 🔧 Configuración inicial
-
+---
 1. Asegúrate de tener Java 17 o superior instalado.
 2. Coloca tus librerías `gson-2.13.1.jar` y `dotenv-java-2.2.4.jar` en la carpeta `libs/`.
-3. Crea un archivo `.env` con tu clave de API:
-
-```
-API_KEY=tu_clave_aqui
-```
+3. Crea un archivo `.env` con tu clave de API: API_KEY=tu_clave_aqui
 
 ---
 
@@ -68,6 +63,7 @@ java -cp "libs/*:bin" App
 ```
 
 ---
+
 
 ## 🖥️ Ejemplo de uso
 
