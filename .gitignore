@@ -1,5 +1,5 @@
 ### Archivos de configuración sensibles ###
-*.env
+**/.env
 
 ### IntelliJ IDEA ###
 out/
