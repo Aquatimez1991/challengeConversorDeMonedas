@@ -1,3 +1,6 @@
+### Archivos de configuración sensibles ###
+**/.env
+
 ### IntelliJ IDEA ###
 out/
 !**/src/main/**/out/
