@@ -6,11 +6,11 @@ import java.net.http.HttpResponse;
 import java.util.Map;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import Utilidades.Config;
 
 public class ConvertidorDeMonedas {
 
-    private static final String API_KEY = "ef3b4b5516c9e616ff718200";
-    private static final String BASE_URL = "https://v6.exchangerate-api.com/v6/" + API_KEY + "/latest/USD";
+    private static final String BASE_URL = "https://v6.exchangerate-api.com/v6/" + Config.getApiKey() + "/latest/USD";
 
     private JsonObject conversionRates;
 

@@ -1,5 +1,5 @@
 package Servicios;
-
+import Utilidades.Config;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
@@ -8,8 +8,8 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
 public class IntercambioDeMonedas {
-    private static final String API_KEY = "ef3b4b5516c9e616ff718200";
-    private static final String BASE_URL = "https://v6.exchangerate-api.com/v6/" + API_KEY + "/latest/";
+
+    private static final String BASE_URL = "https://v6.exchangerate-api.com/v6/" + Config.getApiKey() + "/latest/";
 
     public double convert(String from, String to, double amount) {
         try {
